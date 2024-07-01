@@ -1,0 +1,19 @@
+a) Adding Files and directories:
+Creating a Directory:        hdfs dfs -mkdir /user/hadoop/mydirectory
+Adding Files to HDFS:        hdfs dfs -put localfile.txt /user/hadoop/mydirectory
+Upload a directory to HDFS:  hdfs dfs -put localdirectory /path/in/hdfs
+b)Retrieving Files:
+hdfs dfs -get /path/in/hdfs/localfile.txt /path/in/local
+c) Deleting files:
+• Deleting a File: hdfs dfs -rm /user/hadoop/mydirectory/localfile.txt
+• Deleting a Directory:hdfs dfs -rm -r /user/hadoop/mydirectory
+d) Create a new file in HDFS environment:
+touch local_empty_file.txt
+hdfs dfs -put local_empty_file.txt /path/in/hdfs/emptyfile.txt
+e) List files in HDFS:
+hdfs dfs -ls /path/in/hdfs
+ Upload Files: hdfs dfs -put localfile.txt /path/in/hdfs
+• Download Files: hdfs dfs -get /path/in/hdfs/localfile.txt /path/in/local
+• Copy Files: hdfs dfs -cp /path/in/hdfs/sourcefile.txt /path/in/hdfs/destination/ 
+• Move Files: hdfs dfs -mv /path/in/hdfs/sourcefile.txt /path/in/hdfs/destination/
+• Remove Files: hdfs dfs -rm /path/in/hdfs/localfile.txt
